@@ -6,7 +6,7 @@ param E {R, R};
 
 var X {R, R} binary;
 
-maximize Objective: sum{(i,j) in {R, R}} X[i,j]*E[i,j];
+maximize Objective: sum{(i,j) in {R, R}} X[i,j];
 
 subject to Donor {i in R}: sum{j in R} X[i,j] <= 1;
 
