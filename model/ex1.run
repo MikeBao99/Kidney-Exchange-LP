@@ -1,5 +1,6 @@
 model ex1.mod;
 data ex1.dat;
 option solver './cplex';
+option cplex_options 'clocktype=2 timing=1';
 solve;
-display X > ../output/ex1_10.out;
+#display X > ../output/ex1_5000.out;
