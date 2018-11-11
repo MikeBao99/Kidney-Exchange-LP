@@ -12,7 +12,7 @@ subject to Donor {i in R}: sum{j in R} X[i,j] <= 1;
 
 subject to Recipient {j in R}: sum{i in R} X[i,j] <= 1;
 
-subject to Two {(i,j) in {R, R}}: X[i,j] = X[j,i];
+subject to Reciprocation {i in R}: sum{j in R} X[i,j] = sum{k in R} X[k,i];
 
 subject to Valid {(i,j) in {R, R}}: X[i,j] <= E[i,j];
 
