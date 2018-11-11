@@ -2,3 +2,4 @@ model ex1.mod;
 data ex1.dat;
 option solver './cplex';
 solve;
+display X > ../output/ex1_10.out;
