@@ -1,6 +1,6 @@
-model ex1.mod;
-data ex1.dat;
+model ex52.mod;
+data ex52.dat;
 option solver './cplex';
 option cplex_options 'clocktype=2 timing=1';
 solve;
-display X > ../output/ex52_5000.out;
+print {i in R} : {j in R} X[i,j] > ../output/ex52_50.out;

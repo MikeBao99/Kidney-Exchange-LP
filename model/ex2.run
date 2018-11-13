@@ -2,4 +2,4 @@ model ex2.mod;
 data ex2.dat;
 option solver './cplex';
 solve;
-display X > ../output/ex2_10.out;
+print {i in R} : {j in R} X[i,j] > ../output/ex2_50.out;

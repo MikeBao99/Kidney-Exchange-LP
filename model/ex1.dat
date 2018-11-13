@@ -1,5 +1,5 @@
 data;
 
-param num_rows := 5000;
+param num_rows := 50;
 
-read {i in R, j in R} E[i,j] < ../data/5000_raw.txt
+read {i in R, j in R} E[i,j] < ../data/50_raw.txt;
