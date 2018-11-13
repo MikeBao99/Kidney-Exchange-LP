@@ -3,4 +3,4 @@ data ex2.dat;
 option solver './cplex2';
 option cplex_options 'clocktype=2 timing=1';
 solve;
-print {i in R} : {j in R} X[i,j] > ../output/ex2_250.out;
+print {i in R} : {j in R} X[i,j] > ../output/ex2_100.out;
