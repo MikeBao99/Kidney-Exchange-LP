@@ -1,6 +1,6 @@
 model ex2.mod;
 data ex2.dat;
 option solver './cplex2';
-option cplex_options 'clocktype=2 timing=1';
+option cplex_options 'clocktype=2 timing=1 integrality=0.01';
 solve;
-print {i in R} : {j in R} X[i,j] > ../output/ex2_100.out;
+#print {i in R} : {j in R} X[i,j] > ../output/ex2_100.out;
